@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/jquery.validationEngine-zh_CN.js"></script>
+    <script src="js/jquery.validationEngine.js"></script>
+</head>
+
+<body>
+    <form action="http://www.baidu.com" method="get" class="recharge_form">
+        <fieldset>
+            <label>
+                <input type="text" id="username" id="username" class="validate[required,minSize[2],custom[onlyLetterNumber]]" placeholder="姓名"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <input type="text" id="mobilePhone" id="mobilePhone"  class="validate[required,minSize[11],maxSize[11],custom[onlyNumberSp]]" placeholder="手机号"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <input type="text" id="bank" id="bank"  class="validate[required,custom[onlyNumberSp],custom[creditCard]]" placeholder="开户银行"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                <input type="text" id="email" id="email"  class="validate[required]"  placeholder="Email"/>
+            </label>
+        </fieldset>
+        <button type="submit" id="submitBtn" class="submit_btn">充值</button>
+    </form>
+</body>
+
+</html>
