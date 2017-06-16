@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 fieldset,textarea{border:0;} 
-.recharge_form fieldset input{width:100%;padding:5px 10px;border:1px solid #999;height:30px;line-height: 30px;}
+.recharge_form fieldset input{width:100%;padding:5px 10px;border:1px solid #f4f4f4;height:30px;line-height: 30px;}
 .recharge_form fieldset:not(:last-child){margin-bottom:10px;}
-.recharge_form .submit_btn{display:block;margin:0 auto;width:80%;line-height: 30px;height: 30px;text-align: center;border:none;}
+.recharge_form .submit_btn{display:block;margin:0 auto;width:80%;line-height: 30px;height: 30px;text-align: center;border:none;outline: none;}
+.verify-error .formErrorContent{padding-left:5px!important;line-height: 20px!important;color:#b91c22!important;}
